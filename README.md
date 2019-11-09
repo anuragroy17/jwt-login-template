@@ -6,4 +6,4 @@
  - Backend, for now, only contains login authentication with jwt
  
 # Screenshots
-<img src="https://i.imgur.com/NSzxX99.jpg">
+<img src="https://i.imgur.com/m2q95En.jpg">
