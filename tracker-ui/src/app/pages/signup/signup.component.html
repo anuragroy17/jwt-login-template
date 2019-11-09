@@ -1,0 +1,31 @@
+<div class="main__container">
+  <div class="signup-card">
+
+    <main class="signup-content">
+      <span class="signup-header">Signup</span>
+      <!-- signup form -->
+
+      <form class="signup-form" (ngSubmit)="onSignUp(authform)" #authform="ngForm">
+        <input type="email" id="email" ngModel name="email" placeholder="Email" class="signup-input" required email autofocus>        
+        <input type="text" id="fullName" ngModel name="fullName" placeholder="Full Name" class="signup-input" required />
+        <input type="text" id="userName2" ngModel name="username" placeholder="Username" class="signup-input" required />
+        <input type="password" id="passWord2" ngModel name="password" placeholder="Password" class="signup-input"
+          minlength="6" required>
+        <input type="submit" name="submit" value="Signup" class="signup-btn" [class.btn-disabled]="!authform.form.valid"
+          [disabled]="!authform.form.valid">
+      </form>
+      <div class="login-link-wrapper">
+        <span class="login-notice">Already Have an account?</span>
+        <a class="login-link" routerLink="/login">login</a>
+      </div>
+
+    </main>
+
+    <!-- linking to signup -->
+    <aside class="signup-aside">
+      <div class="signup-aside-overlay"></div>
+      <h1 class="signup-welcome-text">Join Tracker Today!</h1>
+      <hr class="signup-aside-hr">
+    </aside>
+  </div>
+</div>
