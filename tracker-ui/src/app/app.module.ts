@@ -10,6 +10,10 @@ import { HomeComponent } from './pages/home/home.component';
 import { LoginComponent } from './pages/login/login.component';
 import { AuthInterceptor } from './shared/auth.interceptor';
 import { SignupComponent } from './pages/signup/signup.component';
+import {ButtonModule} from 'primeng/button';
+import { MessagesModule } from 'primeng/messages';
+import { MessageModule } from 'primeng/message';
+import { ToastModule } from 'primeng/toast';
 
 @NgModule({
   declarations: [
@@ -23,7 +27,11 @@ import { SignupComponent } from './pages/signup/signup.component';
     BrowserAnimationsModule,
     AppRoutingModule,
     FormsModule,
-    HttpClientModule
+    HttpClientModule,
+    ButtonModule,
+    MessagesModule,
+    MessageModule,
+    ToastModule,
   ],
   providers: [
     { provide: HTTP_INTERCEPTORS, useClass: AuthInterceptor, multi: true },
