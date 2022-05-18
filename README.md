@@ -1,10 +1,8 @@
-# Login with JWT Template
+# Login with JWT - A Demo
+JWT Intergration in Spring Boot(Maven Multi Module) and Angular 8 -
 
-<ul>
- <li> JWT - Token lasts 1 hour </li>
- <li> Angular 8.0 </li>
- <li> Spring Boot </li>
- </ul>
+ - Added JWT token security (lasts one hour) on both frontend and backend
+ - Added AuthGuard to router links for unauthorized access to urls
 
 # Screenshots
 <img src="https://i.imgur.com/m2q95En.jpg">
